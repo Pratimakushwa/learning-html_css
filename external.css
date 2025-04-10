@@ -10,7 +10,22 @@ body{
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
-    text-decoration: underline;
+    text-shadow: 10px 10px 5px blue;
     text-decoration-color: blue;
-    text-decoration-style: dotted;
+    
+}
+.para{
+    font-weight: bold;
+    font-style: italic;
+   
+    text-shadow: 30px 4px 5px blue;
+    
+}
+.wrapper{
+    background-color: tomato;
+    color: white;
+    /*padding-left: 20px;
+    padding-top:20px ;
+    padding-bottom:20px ;*/
+    padding: 20px;
 }
