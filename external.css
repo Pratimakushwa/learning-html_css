@@ -10,7 +10,7 @@ body{
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
-    text-shadow: 10px 10px 5px blue;
+    text-shadow: 10px 10px 5px rgb(0, 255, 51);
     text-decoration-color: blue;
     
 }
@@ -28,4 +28,14 @@ body{
     padding-top:20px ;
     padding-bottom:20px ;*/
     padding: 20px;
+}
+.wrapper1{
+    background-color: blue;
+    color: aliceblue;
+    padding: 20px;
+    margin-top: 20px;
+    border: 13px solid grey;
+    border-radius: 30px;
+    border-top-left-radius: 40px;
+    box-shadow: 3px 4px 6px 7px black;
 }
