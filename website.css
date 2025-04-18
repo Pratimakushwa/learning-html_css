@@ -7,15 +7,19 @@
     text-decoration: none;
     }
     header{
+        background-color: white;
+        
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         padding: 10px ;
         
+       
 
         
     }
     .ul{
+        
         display: flex;
         justify-content: space-between;
         gap: 30px;
@@ -32,14 +36,96 @@
         background-color: rgb(254, 253, 253);
     }
     .list{
+        background-color: white;
         display: flex;
         justify-content: space-evenly;
         list-style: none;
-        position: 15px;
+        padding: 15px;
         align-items: center;
         
-
+    
+    
+       
+       
     }
-    .img{
+    .hero{
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero img{
+        width: 480px;
+        padding: 10px;
         
     }
+
+   .shop{
+    display: flex;
+    justify-content: space-evenly;
+   }
+   .fit{
+    align-items: center;
+    padding:20px;
+   }
+   .buy{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+   }
+   .black{
+    box-shadow: 5px 7px 9px 8px rgb(238, 236, 232);
+   }
+   .lost{
+    box-shadow: 5px 7px 9px 8px rgb(239, 238, 235);
+   }
+   .fog{
+    box-shadow: 5px 7px 9px 8px rgb(226, 225, 222);
+   }
+   .blue{
+    box-shadow: 5px 7px 9px 8px rgb(236, 234, 232);
+   }
+   
+   .latest{
+    align-items: center;
+    padding: 25px;
+   }
+   .collection{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+   }
+   .collection img{
+    width: 280px;
+   }
+   .drop{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+   }
+   .drop img{
+    width: 350px;
+    box-shadow:5px 7px 9px 8px rgb(236, 234, 232); ;
+   }
+   .Category-men{
+    display: flex;
+    padding: 30px;
+   }
+   .Category-men img{
+    width: 240px;
+   }
+   .Category{
+    display: flex;
+    padding: 30px;
+   }
+   .Category img{
+    width: 240px;
+   }
+   .plus-size{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+   }
+   .plus-size img{
+    width: 300px;
+    
+   }
