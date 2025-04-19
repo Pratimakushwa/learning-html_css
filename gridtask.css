@@ -1,35 +1,31 @@
 .container{
-    background-color: yellow;
     height: 100vh;
     display: grid;
+    row-gap: 5px;
+    column-gap: 5px;
     grid-template-columns: repeat(3,auto);
-    grid-template-rows: 300px 200px;
+    grid-template-rows: repeat(2,auto);
+    
 }
-
 .ch1,.ch2,.ch3,.ch4,.ch5,.ch6{
+
     background-color: blue;
     border: 2px solid black;
 }
-
 .ch1{
     grid-column-start: 1;
     grid-column-end: 4;
+   
 }
 .ch2{
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 4;
 }
-.btn:hover{
-    background-color: red;
-    color: white;
-    border: 1px solid gray;
-    padding: 3px;
-    border-radius: 2px;
+.ch6{
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
-.head:hover{
- color: blue;
-}
-img:hover{
-   border-radius: 50%;
-   padding: 3px;
+.ch5{
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
