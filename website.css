@@ -1,6 +1,7 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -123,9 +124,45 @@
    .plus-size{
     display: flex;
     align-items: center;
-    padding-left: 40px;
+    padding-left: 35%;
    }
    .plus-size img{
     width: 300px;
     
+   }
+   .footer{
+    height: 400px;
+   padding: 30px;
+   
+
+    background-color: rgb(66, 7, 7);
+    
+   }
+   .service{
+    
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    font-family: "Special Gothic Expanded One", sans-serif;
+
+   }
+   .with{
+    color: white;
+   }
+   .company{
+    color: white;
+   }
+   .connect{
+    color: white;
+   }
+   .keep input{
+    padding: 10px;
+    background-color: black;
+   }
+   .keep button{
+    padding: 10px;
+    background-color: yellow;
+   }
+   .connect img{
+    gap: 10px;
    }
