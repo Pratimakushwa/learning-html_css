@@ -13,6 +13,7 @@
       border-radius: 50%;
       padding: 3px;
    }
-   .click:checked ~.body{
-    
+   .click:checked~.body{
+    background-color: antiquewhite;
+    color: black;
    }
