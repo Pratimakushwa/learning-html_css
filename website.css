@@ -139,6 +139,13 @@
     width: 300px;
     
    }
+   .Categorys{
+    display: flex;
+    padding: 30px;
+   }
+   .Categorys img{
+    width: 240px;
+   }
    .footer{
     height: 400px;
    padding: 30px;
