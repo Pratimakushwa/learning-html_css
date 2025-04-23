@@ -7,72 +7,122 @@
     padding: 0;
     text-decoration: none;
     }
-    .navbar{
+    .main{
+        display: flex;
+        justify-content: space-between;
+        
+        align-items: center;
+        background-color:white;
+        padding: 15px;
+    }
+    .main-link{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 50px;
+
+       
+    }
+    .main input{
+        padding: 5px;
+    }
+    .sub-links{
+        display:flex ;
+        list-style: none;
+        align-items: center;
+        background-color: white;
+        padding: 10px ;
+        gap: 40px;
+        
+        justify-content: space-evenly;
+
+    }
+   
     
+
+
+    .sub-links li a{
+    text-decoration: none;
+    color: black;
+    }
+   
+    .navbar{
+      
         position: fixed;
         top: 0;
         width: 100%;
     }
-    .navbar a{
-        color: black;
-    }
-    header{
-        background-color: white;
+    
+    .navbar input{
         
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        
-        
-       
-
-        
-    }
-    .ul{
-        
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-    }
-    .container{
-        display: flex;
-        gap: 30px;
-        align-items: center;
-        
-    }
-    .container input{
-        padding: 15px;
         border-style: none;
-        background-color: rgb(254, 253, 253);
     }
-    .list{
-        background-color: white;
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-        padding: 15px;
-        align-items: center;
-        
     
     
-       
-       
+    
+    .navbar label{
+        display: none;
     }
+    #click{
+        display: none;
+    }
+    /* #click:checked~.navbar .main-link,#click:checked ~ .navbar .sub-links{
+        display: block;
+
+    } */
+    @media screen and (max-width:650px){
+        .main-link,
+        .sub-links{
+            display: none;
+            flex-direction: column;
+            background-color: aquamarine;
+            width: 100%;
+        }
+
+        #click:checked~.navbar .main-link,#click:checked ~ .navbar .sub-links{
+            display: block;
+            width: 100%;
+    
+        }
+        .navbar label{
+            display:block;
+        }
+        .main{
+            flex-wrap: wrap;
+        }
+        .main-link input{
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+    
+    
+    
+
     .hero{
         
         display: flex;
         justify-content: space-between;
     }
     .hero img{
-        width: 480px;
+        width: 100%;
         padding: 10px;
         
+    }
+    @media screen and (max-width:650px){
+        .hero {
+            
+            flex-wrap: wrap;
+        }
     }
 
    .shop{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
    }
+  
+
    .fit{
     align-items: center;
     padding:20px;
@@ -81,6 +131,7 @@
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
+    flex-wrap: wrap;
    }
    .black{
     box-shadow: 5px 7px 9px 8px rgb(238, 236, 232);
@@ -103,29 +154,33 @@
     display: flex;
     justify-content: space-evenly;
     padding: 30px;
+    flex-wrap: wrap;
    }
    .collection img{
-    width: 280px;
+    width: 100%px;
    }
    .drop{
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
+    flex-wrap: wrap;
    }
    .drop img{
-    width: 350px;
+    width: 100%px;
     box-shadow:5px 7px 9px 8px rgb(236, 234, 232); ;
    }
    .Category-men{
     display: flex;
     padding: 30px;
+    flex-wrap: wrap;
    }
    .Category-men img{
-    width: 240px;
+    width: 100%px;
    }
    .Category{
     display: flex;
     padding: 30px;
+    flex-wrap: wrap;
    }
    .Category img{
     width: 240px;
@@ -134,6 +189,7 @@
     display: flex;
     align-items: center;
     padding-left: 35%;
+    flex-wrap: wrap;
    }
    .plus-size img{
     width: 300px;
@@ -142,6 +198,7 @@
    .Categorys{
     display: flex;
     padding: 30px;
+    flex-wrap: wrap;
    }
    .Categorys img{
     width: 240px;
@@ -160,6 +217,7 @@
     padding: 10px;
     justify-content: space-evenly;
     font-family: "Special Gothic Expanded One", sans-serif;
+    flex-wrap: wrap;
 
    }
    .service a{
