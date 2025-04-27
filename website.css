@@ -1,6 +1,4 @@
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
 *{
     margin: 0;
@@ -9,23 +7,50 @@
     }
     .main{
         display: flex;
+        
         justify-content: space-between;
         
         align-items: center;
         background-color:white;
-        padding: 15px;
+        padding: 28px 12%;
+        transition: all.50s case;
     }
     .main-link{
         display: flex;
         list-style: none;
         align-items: center;
-        gap: 50px;
+        
 
        
     }
-    .main input{
-        padding: 5px;
+    .main-link a {
+        margin: 0px 30px;
+        padding: 5px 0;
+        transition: all,50s ease;
     }
+    .icon{
+        display: flex;
+        align-items: center;
+         padding-left: 30px;
+        
+    }
+    .icon a{
+        margin-right: 25px;
+        margin-left: 10px;
+        color: black;
+        
+    }
+    .icon input{
+        padding: 5px;
+        padding-left: 30px;
+        border-style: none;
+    }
+    .icon i{
+        margin-right: 25px;
+    
+        
+    }
+   
     .sub-links{
         display:flex ;
         list-style: none;
@@ -37,20 +62,23 @@
         justify-content: space-evenly;
 
     }
-   
+   .main ul{
+    display: flex;
+   }
     
 
 
-    .sub-links li a{
+    .sub-links a{
     text-decoration: none;
     color: black;
     }
-   
+    
     .navbar{
       
         position: fixed;
         top: 0;
         width: 100%;
+        
     }
     
     .navbar input{
@@ -62,38 +90,63 @@
     
     .navbar label{
         display: none;
+    
+    
+        
     }
     #click{
-        display: none;
+        display:none;
     }
     /* #click:checked~.navbar .main-link,#click:checked ~ .navbar .sub-links{
         display: block;
 
     } */
-    @media screen and (max-width:650px){
-        .main-link,
-        .sub-links{
+    @media screen and (max-width:450px){
+        
+        .sub-links {
             display: none;
+            position:absolute;
+          
+            width: 100%;
+            
             flex-direction: column;
-            background-color: aquamarine;
-            width: 100%;
-        }
+            z-index: 10000;
+            background-color: rgb(5, 66, 46);
 
-        #click:checked~.navbar .main-link,#click:checked ~ .navbar .sub-links{
-            display: block;
+            
+        }
+        .main ul{
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            flex-direction: column;
+            z-index: 100000;
             width: 100%;
+            
+            
+            background-color: rgb(5, 66, 46);
+
+
+        }
+       
+      
+       .navbar label{
+        display: block;
+    }
     
-        }
-        .navbar label{
-            display:block;
-        }
-        .main{
-            flex-wrap: wrap;
-        }
-        .main-link input{
-            width: 100%;
-            margin-top: 10px;
-        }
+    
+    .navbar ul li{
+        padding: 12px;
+    }
+    #click:checked~.navbar .main-link,#click:checked ~ .navbar .sub-links{
+        display: block;
+
+
+
+        
+       
+    }
     }
     
     
@@ -109,7 +162,7 @@
         padding: 10px;
         
     }
-    @media screen and (max-width:650px){
+    @media screen and (max-width:459px){
         .hero {
             
             flex-wrap: wrap;
@@ -132,6 +185,7 @@
     justify-content: space-evenly;
     padding: 10px;
     flex-wrap: wrap;
+    width: 100%;
    }
    .black{
     box-shadow: 5px 7px 9px 8px rgb(238, 236, 232);
@@ -157,7 +211,20 @@
     flex-wrap: wrap;
    }
    .collection img{
-    width: 100%px;
+     width: 280px;
+   }
+   .collection div{
+    width: 280px;
+  }
+   @media screen and (max-width:459px){
+    .collection img {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .collection div{
+        flex-wrap: wrap;
+        width: 100%;
+    }
    }
    .drop{
     display: flex;
@@ -166,16 +233,48 @@
     flex-wrap: wrap;
    }
    .drop img{
-    width: 100%px;
+    width: 280px;
     box-shadow:5px 7px 9px 8px rgb(236, 234, 232); ;
    }
+   @media screen and (max-width:459px){
+    .drop img {
+        flex-wrap: wrap;
+        
+        padding: 30px;
+        }
+        .drop div{
+            flex-wrap: wrap;
+            width: 100%;
+        }
+   }
+
+
+
    .Category-men{
     display: flex;
     padding: 30px;
     flex-wrap: wrap;
    }
    .Category-men img{
-    width: 100%px;
+    width: 240px;
+   }
+   .Category-men div{
+    width: 240px;
+   }
+
+   @media screen and (max-width:459px){
+    .Category-men img{
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 30px;
+        
+    }
+    .Category-men div{
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 30px;
+        
+    }
    }
    .Category{
     display: flex;
@@ -185,16 +284,27 @@
    .Category img{
     width: 240px;
    }
+   .Category div{
+    width: 240px;
+   }
+
+   @media screen and (max-width:459px){
+    .Category img{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .Category div{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+   }
    .plus-size{
     display: flex;
     align-items: center;
-    padding-left: 35%;
+
     flex-wrap: wrap;
    }
-   .plus-size img{
-    width: 300px;
-    
-   }
+  
    .Categorys{
     display: flex;
     padding: 30px;
@@ -203,8 +313,25 @@
    .Categorys img{
     width: 240px;
    }
+   .Categorys div{
+    width: 240px;
+   }
+   @media screen and (max-width:459px){
+    .Categorys img{
+        flex-wrap: wrap;
+        
+       width: 100%;
+        
+    }
+    .Categorys div{
+        flex-wrap: wrap;
+        
+       width: 100%;
+        
+    }
+   }
    .footer{
-    height: 400px;
+    
    padding: 30px;
    
 
@@ -217,7 +344,7 @@
     padding: 10px;
     justify-content: space-evenly;
     font-family: "Special Gothic Expanded One", sans-serif;
-    flex-wrap: wrap;
+    
 
    }
    .service a{
@@ -242,3 +369,13 @@
     padding: 10px;
     background-color: yellow;
    }
+    @media screen and (max-width:459px){
+        .service{
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .service div{
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    }

@@ -1,34 +1,32 @@
-.container{
-    background-color: yellow;
-    height: 100vh;
+.grid{
+    width: 50vh;
+    height: 50vh;
     display: grid;
-    grid-template-columns: repeat(3,auto);
-    grid-template-rows: 300px 200px;
+    
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(2,auto);
+    
 }
-
-.ch1,.ch2,.ch3,.ch4,.ch5,.ch6{
-    background-color: blue;
-    border: 2px solid black;
+.grid1,.grid2,.grid3,.grid4,.grid5,.grid6,.grid7{
+    background-color: aqua;
+    align-items: center;
 }
-.ch1{
+.grid1{
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 5;
 }
-.ch2{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-.ch2{
-    grid-column-start: 2;
-    grid-column-end: 4;
+.grid2{
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
-.btn:hover{
-    background-color: red;
-    color: white;
-    border: 1px solid gray;
-    padding: 3px;
-    border-radius: 2px;
+.grid3{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+.grid7{
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
