@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(93, 213, 93);
+}
+
+.img{
+    background-image:url(view.webp);
+    height: 300px;
+    width: 300px;
+}
+h3{
+    color: rgb(159, 224, 159);
+}
+.forming{
+    background-color: rgb(4, 25, 4);
+    width: 300px;
+    height: 260px;
+    padding: 20px;
+}
+.fresh{
+    display: flex;
+    justify-content: center;
+}
+p{
+    color: white;
+}
+h1{
+    color: white;
+}
+.imgs{
+    
+    height: 100px;
+    width: 100px;
+}
+.formings{
+    background-color: rgb(86, 182, 86);
+    width: 300px;
+    height: 260px;
+    padding: 20px;
+}
+
+.ff{
+    color: rgb(8, 51, 8);
+}
+.gg{
+    color: rgb(5, 41, 5);
+}
