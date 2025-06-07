@@ -3,7 +3,7 @@
 }
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: yellow;
     align-items: center;
 }
@@ -20,4 +20,33 @@
 }
 .nav h1{
     padding-right: 40%;
+} 
+
+ #click{
+    display: none;
+}
+label{
+    display: none;
+} 
+#click:checked ~ ul  {
+    display: block;
+}
+@media screen and (max-width:450px){
+    
+     .nav label{
+        display: block;
+    }
+    .nav ul{
+        display: none;
+        position: absolute;
+        top:60px;
+        background-color: aquamarine;
+        flex-direction: column;
+        /* z-index: 1; */
+        width: 50%;
+        height: 50%;
+    }
+    .nav ul li{
+        padding: 12px;
+    }
 }
